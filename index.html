@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shivang Ranjan | Computer Engineer & Frontend Developer</title>
+
+    <meta
+      name="description"
+      content="Shivang Ranjan is a Computer Engineer and Frontend Developer specializing in React.js, Next.js, TypeScript, and modern web applications."
+    />
+
+    <meta
+      name="keywords"
+      content="Shivang Ranjan, Frontend Developer, React Developer, Next.js Developer, Computer Engineer, TypeScript Developer, Full Stack Developer"
+    />
+
+    <meta name="author" content="Shivang Ranjan" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shivang Ranjan | Computer Engineer & Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Computer Engineer & Frontend Developer building scalable, modern web applications using React, Next.js, and TypeScript."
+    />
+    <meta
+      property="og:image"
+      content="/preview.png"
+    />
+    <meta property="og:url" content="https://github.com/shivangranjann" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Shivang Ranjan" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Shivang Ranjan | Computer Engineer & Frontend Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Computer Engineer & Frontend Developer specializing in React.js, Next.js, and TypeScript."
+    />
+    <meta
+      name="twitter:image"
+      content="/preview.png"
+    />
+    <meta name="twitter:site" content="@shivangranjann" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Script -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("sr-theme");
+          var supportDarkMode =
+            window.matchMedia("(prefers-color-scheme: dark)").matches === true;
+          if (!theme && supportDarkMode) theme = "dark";
+          if (!theme) theme = "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          window.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+              document.documentElement.classList.add("theme-ready");
+            }, 300);
+          });
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+
+        "name": "Shivang Ranjan",
+
+        "url": "https://github.com/shivangranjann",
+
+        "image": "https://avatars.githubusercontent.com/u/257182472?v=4",
+
+        "jobTitle": "Computer Engineer & Frontend Developer",
+
+        "description": "Frontend Developer and Computer Engineer specializing in React.js, Next.js, TypeScript, and scalable modern web applications.",
+
+        "sameAs": [
+          "https://github.com/shivangranjann",
+          "https://www.linkedin.com/in/shivangranjann"
+        ],
+
+        "knowsAbout": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "Node.js",
+          "Frontend Development",
+          "Web Development",
+          "Tailwind CSS"
+        ],
+
+        "email": "mailto:shivangranjan098@gmail.com"
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ══════ TOKENS ══════ */
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface2: #181818;
+  --border: #222222;
+  --border2: #2e2e2e;
+  --accent: #b8ff57;
+  --accent-h: #d4ff7a;
+  --accent-dim: rgba(184, 255, 87, 0.07);
+  --accent-border: rgba(184, 255, 87, 0.28);
+  --text: #f0f0f0;
+  --muted: #555555;
+  --muted2: #888888;
+  --code-bg: #111111;
+  --nav-bg: rgba(10, 10, 10, 0.9);
+  --num-ghost: #1e1e1e;
+  --shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --toggle-track: #222;
+  --toggle-knob: #b8ff57;
+  --c-key: #7dd3fc;
+  --c-fn: #c4b5fd;
+}
+[data-theme="light"] {
+  --bg: #f5f3ef;
+  --surface: #eceae5;
+  --surface2: #e2e0db;
+  --border: #d4d1ca;
+  --border2: #c5c2ba;
+  --accent: #5a9e00;
+  --accent-h: #4a8500;
+  --accent-dim: rgba(90, 158, 0, 0.07);
+  --accent-border: rgba(90, 158, 0, 0.35);
+  --text: #1a1a1a;
+  --muted: #888880;
+  --muted2: #555550;
+  --code-bg: #e4e2dd;
+  --nav-bg: rgba(245, 243, 239, 0.93);
+  --num-ghost: #dddbd5;
+  --shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+  --toggle-track: #d4d1ca;
+  --toggle-knob: #1a1a1a;
+  --c-key: #1d6fa5;
+  --c-fn: #7c5dbf;
+}
+
+/* ══════ BASE ══════ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.theme-ready body {
+  transition:
+    background 0.4s,
+    color 0.4s;
+}
+.theme-ready body::before {
+  transition:
+    background 0.4s,
+    border-color 0.4s;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.35;
+}
+
+/* ══════ SCROLLBAR ══════ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-h);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--surface);
+}
