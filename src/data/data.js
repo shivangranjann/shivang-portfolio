@@ -28,6 +28,7 @@ import haldiaLogo from "../images/haldia-logo.png";
 import stjohnsLogo from "../images/stjohns-logo.png";
 import rlsaLogo from "../images/rlsa-logo.png";
 import shivangImg from "../images/shivang.jpg";
+import portfolioPreview from "../images/portfolio-preview.png";
 
 export const bio = {
   name: "Shivang Ranjan",
@@ -268,6 +269,38 @@ const LIVE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" f
 export const projects = [
   {
     num: "01",
+    badge: "Personal · Portfolio Website",
+    title: "Developer Portfolio",
+    featured: true,
+    desc: "Personal developer portfolio website showcasing full-stack projects, technical skills, education, and achievements. Built with React.js, Tailwind CSS, and Vite with responsive design, dynamic themes, and smooth micro-interactions.",
+    tools: ["React.js", "Tailwind CSS", "Vite", "JavaScript"],
+    links: [
+      {
+        label: "GitHub",
+        icon: GH_ICON,
+        href: "https://github.com/shivangranjann/shivang-portfolio",
+      },
+      {
+        label: "Live",
+        icon: LIVE_ICON,
+        href: "https://shivang-ranjan-portfolio.vercel.app",
+      },
+    ],
+    team: [
+      {
+        name: "Shivang Ranjan",
+        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
+        github: "https://github.com/shivangranjann",
+        linkedin: "https://www.linkedin.com/in/shivangranjann",
+        alt: "SR",
+      },
+    ],
+    images: [portfolioPreview],
+    lang: "JavaScript",
+    langColor: "#f1e05a",
+  },
+  {
+    num: "02",
     badge: "★ Professional · 15K+ Daily Users",
     title: "ShareHub Nepal",
     featured: true,
@@ -291,7 +324,7 @@ export const projects = [
     langColor: "#3178c6",
   },
   {
-    num: "02",
+    num: "03",
     badge: "Professional · Chrome Extension",
     title: "Share Hub Extension",
     desc: "Browser extension for Meroshare, TMS & NEPSE with encrypted one-click login, live stock insights, and a custom portfolio dashboard showing daily gain/loss.",
@@ -318,7 +351,7 @@ export const projects = [
     langColor: "#f1e05a",
   },
   {
-    num: "03",
+    num: "04",
     badge: "Personal · AI-Powered",
     title: "IntervueAI",
     desc: "AI-powered interview prep platform generating role-specific questions via Google GenAI. JWT auth, smart pinning, notes, PDF exports, and Cloudinary image handling.",
@@ -356,7 +389,7 @@ export const projects = [
     langColor: "#f1e05a",
   },
   {
-    num: "04",
+    num: "05",
     badge: "🏆 Best Major Project — KEC",
     title: "Hand Drawn → Digital Circuit",
     desc: "Converts hand-drawn circuits to digital schematics with 90% component recognition. YOLO for detection, Hough Transform for lines, Schemdraw for rendering. 40% accuracy boost.",
@@ -396,7 +429,7 @@ export const projects = [
     langColor: "#3572A5",
   },
   {
-    num: "05",
+    num: "06",
     badge: "Personal · Mobile App",
     title: "ShelfShare",
     desc: "Community-driven mobile app for sharing and discovering book recommendations. Ratings, dynamic home feed, pull-to-refresh, and a RESTful backend on Render.com.",
@@ -422,7 +455,7 @@ export const projects = [
     langColor: "#f1e05a",
   },
   {
-    num: "06",
+    num: "07",
     badge: "Academic · Full Stack",
     title: "IOE Result & Notice Viewer",
     desc: "Result status, notice viewing, subscriptions and automated email notifications using Python, Django, SQL, OCR and web scraping.",
