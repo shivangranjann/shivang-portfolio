@@ -1,3 +1,5 @@
+import { bio } from "../data/data";
+
 export default function Footer() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -6,14 +8,21 @@ export default function Footer() {
       <div className="flex items-center gap-[12px]">
         <a
           href="#hero"
-          className="font-syne font-extrabold text-[18px] tracking-[-0.5px] text-text no-underline transition-colors duration-[400ms] relative pr-[6px]"
+          className="relative inline-flex items-center justify-center no-underline group"
           onClick={(e) => {
             e.preventDefault();
             scrollToTop();
           }}
+          aria-label="Shivang Ranjan - Back to top"
         >
-          SR
-          <span className="absolute top-[1px] right-0 w-[5px] h-[5px] rounded-full bg-accent transition-colors duration-[400ms]"></span>
+          <div className="w-[32px] h-[32px] rounded-xl overflow-hidden border border-border bg-surface2 shadow-xs transition-all duration-300 group-hover:scale-105 group-hover:border-accent/60 relative">
+            <img
+              src={bio.avatar}
+              alt="Shivang Ranjan"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <span className="absolute -top-[1px] -right-[1px] w-[7px] h-[7px] rounded-full bg-accent border-[1.5px] border-bg transition-colors duration-[400ms]" />
         </a>
         <div className="w-[1px] h-[12px] bg-border transition-colors duration-[400ms]" />
         <div className="text-[11px] text-muted transition-colors duration-[400ms] font-mono tracking-wider uppercase pt-[1px]">

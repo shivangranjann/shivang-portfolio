@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
+import { bio } from "../data/data";
 
 const navItems = [
   "experience",
@@ -37,14 +38,21 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-[18px] py-[14px] md:px-6 md:py-4 lg:px-10 lg:py-[18px] bg-nav-bg backdrop-blur-[14px] border-b border-border transition-colors duration-[400ms]">
         <a
           href="#hero"
-          className="font-syne font-extrabold text-[18px] tracking-[-0.5px] text-text no-underline transition-colors duration-[400ms] relative pr-[6px]"
+          className="relative inline-flex items-center justify-center no-underline group"
           onClick={(e) => {
             e.preventDefault();
             scrollTo("hero");
           }}
+          aria-label="Shivang Ranjan - Home"
         >
-          SR
-          <span className="absolute top-[1px] right-0 w-[5px] h-[5px] rounded-full bg-accent transition-colors duration-[400ms]"></span>
+          <div className="w-[36px] h-[36px] rounded-xl overflow-hidden border border-border bg-surface2 shadow-xs transition-all duration-300 group-hover:scale-105 group-hover:border-accent/60 relative">
+            <img
+              src={bio.avatar}
+              alt="Shivang Ranjan"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <span className="absolute -top-[1px] -right-[1px] w-[7px] h-[7px] rounded-full bg-accent border-[1.5px] border-nav-bg transition-colors duration-[400ms]" />
         </a>
 
         <ul className="hidden md:flex items-center gap-[28px] list-none">
