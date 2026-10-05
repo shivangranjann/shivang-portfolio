@@ -1,29 +1,7 @@
-import sh1 from "../images/Sharehub Mockup/Cover page.jpg";
-import sh2 from "../images/Sharehub Mockup/Floorsheet page.jpg";
-import sh3 from "../images/Sharehub Mockup/Live nepse page.jpg";
-import sh4 from "../images/Sharehub Mockup/Overview page.jpg";
-import sh5 from "../images/Sharehub Mockup/Portfolio Page 1.jpg";
-import sh6 from "../images/Sharehub Mockup/Portfolio Page 2.jpg";
+// Project image imports
+// (Import your project screenshots here when adding new projects)
+// import sampleMockup from "../images/...";
 
-import ext1 from "../images/Extension Mockup/1.jpg";
-import ext2 from "../images/Extension Mockup/2.jpg";
-import ext3 from "../images/Extension Mockup/3.jpg";
-
-import int2 from "../images/Intervue AI Mockup/2.png";
-import int3 from "../images/Intervue AI Mockup/3.png";
-import int4 from "../images/Intervue AI Mockup/4.png";
-import int5 from "../images/Intervue AI Mockup/5.png";
-
-import ss1 from "../images/Shelfshare Mockup/1.jpg";
-import ss2 from "../images/Shelfshare Mockup/2.jpg";
-import ss3 from "../images/Shelfshare Mockup/3.jpg";
-import ss4 from "../images/Shelfshare Mockup/4.jpg";
-import ss5 from "../images/Shelfshare Mockup/5.jpg";
-
-import h2dc1 from "../images/H2DC Mockup/h2dc-initial.png";
-import h2dc2 from "../images/H2DC Mockup/h2dc-intermediate.png";
-import h2dc3 from "../images/H2DC Mockup/h2dc-final-result.png";
-import ioe from "../images/ioe.png";
 import haldiaLogo from "../images/haldia-logo.png";
 import stjohnsLogo from "../images/stjohns-logo.png";
 import rlsaLogo from "../images/rlsa-logo.png";
@@ -299,16 +277,18 @@ export const projects = [
     lang: "JavaScript",
     langColor: "#f1e05a",
   },
+  /*
+  // Future projects template - duplicate and edit below:
   {
     num: "02",
-    badge: "★ Professional · 15K+ Daily Users",
-    title: "ShareHub Nepal",
-    featured: true,
-    desc: "A real-time stock market platform serving 15,000+ daily users with live market analysis for Nepalese investors. Redux + React-Query cut API redundancies by 25% and improved user retention by 20%.",
-    tools: ["Next.js", "Redux", "TypeScript", "Tailwind CSS", "React-Query"],
+    badge: "Personal · Full Stack",
+    title: "Your Project Title",
+    featured: false,
+    desc: "A concise overview of what this project does, key features, and performance impact.",
+    tools: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
     links: [
-      // { label: "GitHub", icon: GH_ICON, href: "https://github.com/shivangranjann" },
-      { label: "Live", icon: LIVE_ICON, href: "https://sharehubnepal.com/" },
+      { label: "GitHub", icon: GH_ICON, href: "https://github.com/shivangranjann/repo-name" },
+      { label: "Live", icon: LIVE_ICON, href: "https://live-website-url.com" },
     ],
     team: [
       {
@@ -319,170 +299,11 @@ export const projects = [
         alt: "SR",
       },
     ],
-    images: [sh1, sh4, sh2, sh3, sh5, sh6],
-    lang: "TypeScript",
-    langColor: "#3178c6",
-  },
-  {
-    num: "03",
-    badge: "Professional · Chrome Extension",
-    title: "Share Hub Extension",
-    desc: "Browser extension for Meroshare, TMS & NEPSE with encrypted one-click login, live stock insights, and a custom portfolio dashboard showing daily gain/loss.",
-    tools: ["JavaScript", "Chrome Ext.", "React.js", "Tailwind CSS"],
-    links: [
-      // { label: "GitHub", icon: GH_ICON, href: "https://github.com/shivangranjann" },
-      {
-        label: "Live",
-        icon: LIVE_ICON,
-        href: "https://chromewebstore.google.com/detail/share-hub-extension/malbgjfpnimnimlacmidgbchbmgmkicn",
-      },
-    ],
-    team: [
-      {
-        name: "Shivang Ranjan",
-        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
-        github: "https://github.com/shivangranjann",
-        linkedin: "https://www.linkedin.com/in/shivangranjann",
-        alt: "SR",
-      },
-    ],
-    images: [ext1, ext2, ext3],
+    images: [portfolioPreview], // or import your new project screenshot at the top
     lang: "JavaScript",
     langColor: "#f1e05a",
   },
-  {
-    num: "04",
-    badge: "Personal · AI-Powered",
-    title: "IntervueAI",
-    desc: "AI-powered interview prep platform generating role-specific questions via Google GenAI. JWT auth, smart pinning, notes, PDF exports, and Cloudinary image handling.",
-    tools: [
-      "React.js",
-      "Node.js",
-      "MongoDB",
-      "Tailwind CSS",
-      "JWT",
-      "Cloudinary",
-    ],
-    links: [
-      {
-        label: "GitHub",
-        icon: GH_ICON,
-        href: "https://github.com/shivangranjann/IntervueAI",
-      },
-      {
-        label: "Live",
-        icon: LIVE_ICON,
-        href: "https://intervue-ai-six.vercel.app/",
-      },
-    ],
-    team: [
-      {
-        name: "Shivang Ranjan",
-        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
-        github: "https://github.com/shivangranjann",
-        linkedin: "https://www.linkedin.com/in/shivangranjann",
-        alt: "SR",
-      },
-    ],
-    images: [int2, int3, int4, int5],
-    lang: "JavaScript",
-    langColor: "#f1e05a",
-  },
-  {
-    num: "05",
-    badge: "🏆 Best Major Project — KEC",
-    title: "Hand Drawn → Digital Circuit",
-    desc: "Converts hand-drawn circuits to digital schematics with 90% component recognition. YOLO for detection, Hough Transform for lines, Schemdraw for rendering. 40% accuracy boost.",
-    tools: ["Python", "YOLO", "Streamlit", "Schemdraw", "PySpice"],
-    links: [
-      { label: "GitHub", icon: GH_ICON, href: "https://github.com/H2DC" },
-    ],
-    team: [
-      {
-        name: "Shivang Ranjan",
-        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
-        github: "https://github.com/shivangranjann",
-        linkedin: "https://www.linkedin.com/in/shivangranjann",
-        alt: "SR",
-      },
-      {
-        name: "Anuj Shakya",
-        src: "https://avatars.githubusercontent.com/u/63465509?v=4",
-        github: "https://github.com/Anujshakya",
-        alt: "AN",
-      },
-      {
-        name: "Jasmine Bajracharya",
-        src: "https://avatars.githubusercontent.com/u/63485374?v=4",
-        github: "https://github.com/Jasmineb1",
-        alt: "JB",
-      },
-      {
-        name: "Ojashwi Neupane",
-        github: "https://github.com/Ojashwinpn",
-        alt: "OJ",
-        ph: "OJ",
-      },
-    ],
-    images: [h2dc1, h2dc2, h2dc3],
-    lang: "Python",
-    langColor: "#3572A5",
-  },
-  {
-    num: "06",
-    badge: "Personal · Mobile App",
-    title: "ShelfShare",
-    desc: "Community-driven mobile app for sharing and discovering book recommendations. Ratings, dynamic home feed, pull-to-refresh, and a RESTful backend on Render.com.",
-    tools: ["React Native", "Expo", "Node.js", "MongoDB", "JWT"],
-    links: [
-      {
-        label: "GitHub",
-        icon: GH_ICON,
-        href: "https://github.com/shivangranjann/ShelfShare",
-      },
-    ],
-    team: [
-      {
-        name: "Shivang Ranjan",
-        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
-        github: "https://github.com/shivangranjann",
-        linkedin: "https://www.linkedin.com/in/shivangranjann",
-        alt: "SR",
-      },
-    ],
-    images: [ss1, ss2, ss3, ss4, ss5],
-    lang: "JavaScript",
-    langColor: "#f1e05a",
-  },
-  {
-    num: "07",
-    badge: "Academic · Full Stack",
-    title: "IOE Result & Notice Viewer",
-    desc: "Result status, notice viewing, subscriptions and automated email notifications using Python, Django, SQL, OCR and web scraping.",
-    tools: ["Python", "SQL", "HTML / CSS", "OCR", "Email Automation"],
-    links: [
-      {
-        label: "GitHub",
-        icon: GH_ICON,
-        href: "https://github.com/shivangranjann/Kec-website",
-      },
-    ],
-    team: [
-      {
-        name: "Shivang Ranjan",
-        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
-        github: "https://github.com/shivangranjann",
-        linkedin: "https://www.linkedin.com/in/shivangranjann",
-        alt: "SR",
-      },
-      { name: "Aliz Shrestha", alt: "AL", ph: "AL" },
-      { name: "Ankit Kafle", alt: "AK", ph: "AK" },
-      { name: "Kashyap Ghimire", alt: "KG", ph: "KG" },
-    ],
-    images: [ioe],
-    lang: "Python",
-    langColor: "#3572A5",
-  },
+  */
 ];
 
 export const education = [
@@ -597,34 +418,12 @@ export const achievements = [
 ];
 
 export const minorProjects = [
+  /*
+  // Future mini-projects template - duplicate and edit below:
   {
-    title: "Book Course Application",
-    description: "Spring Boot backend & React frontend using SQL and Axios.",
-    github: [
-      {
-        url: "https://github.com/shivangranjann/book-course-web",
-        label: "Frontend",
-      },
-      {
-        url: "https://github.com/shivangranjann/book-course-backend",
-        label: "Backend",
-      },
-    ],
+    title: "Mini Project Title",
+    description: "Brief description of the mini-project and technologies used.",
+    github: "https://github.com/shivangranjann/repo-name",
   },
-  {
-    title: "Supermarket Billing System",
-    description: "Java-based billing system built with Swing and JDBC.",
-    github: "https://github.com/shivangranjann/supermarket-billing-system",
-  },
-  {
-    title: "MERN Blog",
-    description: "Daily blogging platform using MongoDB, Express, React, Node.",
-    github: "https://github.com/shivangranjann/Blog-website",
-  },
-  {
-    title: "Keeper App",
-    description:
-      "Responsive note-taking application built with React and Node.js.",
-    github: "https://github.com/shivangranjann/keeper",
-  },
+  */
 ];
