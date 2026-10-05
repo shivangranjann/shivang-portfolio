@@ -39,7 +39,7 @@ export const bio = {
     "Software Engineer",
   ],
   description:
-    "Dedicated Computer Engineer and Full-stack Developer with a passion for building scalable, high-performance web applications. Quick learner who adapts to new technologies and thrives on turning complex problems into elegant digital solutions.",
+    "Full-stack Developer and Computer Science & Engineering (CSE-AIML) student with a passion for building modern, scalable web applications. I enjoy turning ideas into clean digital experiences while continuously improving my programming and problem-solving skills.",
   github: "https://github.com/shivangranjann",
   linkedin: "https://www.linkedin.com/in/shivangranjann",
   twitter: "https://twitter.com/shivangranjann",
@@ -49,7 +49,7 @@ export const bio = {
 };
 
 export const stats = [
-  { num: "2", suffix: "+", label: "Years Exp" },
+  { num: "1", suffix: "+", label: "Years Exp" },
   { num: "10", suffix: "+", label: "Projects" },
   { num: "Open", suffix: "", label: "Source Contributor" },
 ];
