@@ -160,11 +160,22 @@ export default function Hero() {
             <div className="flex gap-[6px] flex-wrap">
               &nbsp;&nbsp;
               <span className="text-[var(--c-key)] transition-colors duration-[400ms]">
+                role
+              </span>
+              :&nbsp;
+              <span className="text-accent transition-colors duration-[400ms]">
+                "Full-stack Developer"
+              </span>
+              ,
+            </div>
+            <div className="flex gap-[6px] flex-wrap">
+              &nbsp;&nbsp;
+              <span className="text-[var(--c-key)] transition-colors duration-[400ms]">
                 degree
               </span>
               :&nbsp;
               <span className="text-accent transition-colors duration-[400ms]">
-                "Computer Eng."
+                "CSE-AIML"
               </span>
               ,
             </div>
@@ -174,43 +185,51 @@ export default function Hero() {
                 exp
               </span>
               :&nbsp;
-              <span className="text-[#fb923c]">2</span>&nbsp;
-              <span className="text-muted transition-colors duration-[400ms]">
-                {"/* years */"}
+              <span className="text-accent transition-colors duration-[400ms]">
+                "Sep 2025 - Present"
               </span>
               ,
             </div>
             <div className="flex gap-[6px] flex-wrap">
               &nbsp;&nbsp;
               <span className="text-[var(--c-key)] transition-colors duration-[400ms]">
-                stack
+                skills
               </span>
               : [
             </div>
             <div className="flex gap-[6px] flex-wrap">
               &nbsp;&nbsp;&nbsp;&nbsp;
               <span className="text-accent transition-colors duration-[400ms]">
-                "React"
-              </span>
-              ,&nbsp;
-              <span className="text-accent transition-colors duration-[400ms]">
-                "Next.js"
+                "Python"
               </span>
               ,
             </div>
             <div className="flex gap-[6px] flex-wrap">
               &nbsp;&nbsp;&nbsp;&nbsp;
               <span className="text-accent transition-colors duration-[400ms]">
-                "TypeScript"
+                "JavaScript"
               </span>
               ,
             </div>
             <div className="flex gap-[6px] flex-wrap">
               &nbsp;&nbsp;&nbsp;&nbsp;
               <span className="text-accent transition-colors duration-[400ms]">
-                "Node.js"
+                "HTML"
               </span>
               ,
+            </div>
+            <div className="flex gap-[6px] flex-wrap">
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="text-accent transition-colors duration-[400ms]">
+                "CSS"
+              </span>
+              ,
+            </div>
+            <div className="flex gap-[6px] flex-wrap">
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="text-accent transition-colors duration-[400ms]">
+                "React.js"
+              </span>
             </div>
             <div className="flex gap-[6px] flex-wrap">&nbsp;&nbsp;],</div>
             <div className="flex gap-[6px] flex-wrap">
@@ -220,7 +239,7 @@ export default function Hero() {
               </span>
               :&nbsp;
               <span className="text-accent transition-colors duration-[400ms]">
-                "Haldia, WB 🇮🇳"
+                "Haldia, WB"
               </span>
             </div>
             <div className="flex gap-[6px] flex-wrap">{"}"};</div>
