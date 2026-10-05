@@ -27,9 +27,11 @@ import ioe from "../images/ioe.png";
 import haldiaLogo from "../images/haldia-logo.png";
 import stjohnsLogo from "../images/stjohns-logo.png";
 import rlsaLogo from "../images/rlsa-logo.png";
+import shivangImg from "../images/shivang.jpg";
 
 export const bio = {
   name: "Shivang Ranjan",
+  avatar: shivangImg,
   roles: [
     "Full-stack Developer",
     "Frontend Developer",

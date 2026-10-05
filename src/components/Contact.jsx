@@ -121,8 +121,12 @@ export default function Contact() {
             </div>
           </div>
           <div className="group bg-bg border border-border rounded-2xl p-[20px_28px] flex items-center gap-[16px] transition-all duration-300 hover:border-accent/40 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1">
-            <div className="w-[48px] h-[48px] bg-accent flex items-center justify-center font-syne font-extrabold text-[17px] text-black shrink-0 rounded-xl transition-all duration-300 group-hover:scale-110">
-              SR
+            <div className="w-[48px] h-[48px] rounded-xl overflow-hidden shrink-0 border border-border bg-surface2 transition-all duration-300 group-hover:scale-105 group-hover:border-accent/50 shadow-sm relative">
+              <img
+                src={bio.avatar}
+                alt={bio.name}
+                className="w-full h-full object-cover object-center"
+              />
             </div>
             <div>
               <div className="text-[14px] font-bold font-syne text-text transition-colors duration-[400ms]">
