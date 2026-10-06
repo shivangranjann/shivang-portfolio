@@ -7,6 +7,7 @@ import stjohnsLogo from "../images/stjohns-logo.png";
 import rlsaLogo from "../images/rlsa-logo.png";
 import shivangImg from "../images/shivang.jpg";
 import portfolioPreview from "../images/portfolio-preview.png";
+import diceImg from "../images/dice.png";
 
 export const bio = {
   name: "Shivang Ranjan",
@@ -274,6 +275,38 @@ export const projects = [
       },
     ],
     images: [portfolioPreview],
+    lang: "JavaScript",
+    langColor: "#f1e05a",
+  },
+  {
+    num: "02",
+    badge: "Personal · Interactive Game",
+    title: "Dice Game Challenge",
+    featured: false,
+    desc: "An interactive Dice Game Challenge built with HTML, CSS, and JavaScript. Roll the dice, generate random results, and determine the winner with an engaging and responsive user interface.",
+    tools: ["JavaScript", "HTML5", "CSS3"],
+    links: [
+      {
+        label: "GitHub",
+        icon: GH_ICON,
+        href: "https://github.com/shivangranjann/Dice-Game-Challenge",
+      },
+      {
+        label: "Live",
+        icon: LIVE_ICON,
+        href: "https://dice-game-challenges.vercel.app",
+      },
+    ],
+    team: [
+      {
+        name: "Shivang Ranjan",
+        src: "https://avatars.githubusercontent.com/u/257182472?v=4",
+        github: "https://github.com/shivangranjann",
+        linkedin: "https://www.linkedin.com/in/shivangranjann",
+        alt: "SR",
+      },
+    ],
+    images: [diceImg],
     lang: "JavaScript",
     langColor: "#f1e05a",
   },
