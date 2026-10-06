@@ -275,8 +275,8 @@ export const projects = [
       },
     ],
     images: [portfolioPreview],
-    lang: "CSS",
-    langColor: "#340082ff",
+    lang: "JavaScript",
+    langColor: "#f7ff57ff",
   },
   {
     num: "02",
