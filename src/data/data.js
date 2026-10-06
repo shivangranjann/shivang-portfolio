@@ -275,8 +275,8 @@ export const projects = [
       },
     ],
     images: [portfolioPreview],
-    lang: "JavaScript",
-    langColor: "#f1e05a",
+    lang: "CSS",
+    langColor: "#340082ff",
   },
   {
     num: "02",
@@ -307,8 +307,8 @@ export const projects = [
       },
     ],
     images: [diceImg],
-    lang: "JavaScript",
-    langColor: "#f1e05a",
+    lang: "CSS",
+    langColor: "#340082ff",
   },
   /*
   // Future projects template - duplicate and edit below:
