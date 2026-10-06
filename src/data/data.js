@@ -8,6 +8,8 @@ import rlsaLogo from "../images/rlsa-logo.png";
 import shivangImg from "../images/shivang.jpg";
 import portfolioPreview from "../images/portfolio-preview.png";
 import diceImg from "../images/dice.png";
+import certHelloWorld from "../images/cert-hello-world.jpg";
+import certAppDev from "../images/cert-app-dev.jpg";
 
 export const bio = {
   name: "Shivang Ranjan",
@@ -385,11 +387,13 @@ export const certifications = [
     title: "Hello World 1.0",
     org: "ACM HIT Student Chapter",
     desc: "Participated in Hello World 1.0 organized by ACM HIT Student Chapter.",
+    image: certHelloWorld,
   },
   {
     title: "App Development 2.0",
     org: "GDG On Campus, HIT",
     desc: "Participated in App Development 2.0 organized by GDG On Campus, HIT.",
+    image: certAppDev,
   },
   {
     date: "AUG 2026",
