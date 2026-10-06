@@ -275,8 +275,8 @@ export const projects = [
       },
     ],
     images: [portfolioPreview],
-    lang: "JavaScript",
-    langColor: "#f1e05a",
+    lang: "CSS",
+    langColor: "#563d7c",
   },
   {
     num: "02",
@@ -284,7 +284,7 @@ export const projects = [
     title: "Dice Game Challenge",
     featured: false,
     desc: "An interactive Dice Game Challenge built with HTML, CSS, and JavaScript. Roll the dice, generate random results, and determine the winner with an engaging and responsive user interface.",
-    tools: ["JavaScript", "HTML5", "CSS3"],
+    tools: ["CSS3", "JavaScript", "HTML5"],
     links: [
       {
         label: "GitHub",
@@ -307,8 +307,8 @@ export const projects = [
       },
     ],
     images: [diceImg],
-    lang: "JavaScript",
-    langColor: "#f1e05a",
+    lang: "CSS",
+    langColor: "#563d7c",
   },
   /*
   // Future projects template - duplicate and edit below:
