@@ -95,15 +95,15 @@ export default function Contact() {
               Shivang Ranjan
             </div>
             <div className="text-[12px] text-accent mb-[20px] font-medium tracking-[0.02em] transition-colors duration-[400ms]">
-              Computer Engineer · Frontend Developer
+              Full-stack Developer · CSE-AIML
             </div>
             <div className="flex flex-wrap gap-[8px] mb-[24px]">
               {[
+                "Python",
+                "JavaScript",
+                "HTML",
+                "CSS",
                 "React.js",
-                "Next.js",
-                "TypeScript",
-                "Node.js",
-                "Tailwind CSS",
               ].map((t) => (
                 <span
                   className="text-[10px] tracking-[0.05em] uppercase font-semibold p-[6px_12px] bg-surface2 border border-border rounded-full text-accent transition-colors duration-[400ms]"
