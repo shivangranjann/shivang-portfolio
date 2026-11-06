@@ -10,6 +10,7 @@ import portfolioPreview from "../images/portfolio-preview.png";
 import diceImg from "../images/dice.png";
 import certHelloWorld from "../images/cert-hello-world.jpg";
 import certAppDev from "../images/cert-app-dev.jpg";
+import certGoogleCloud from "../images/cert-google-cloud.jpg";
 
 export const bio = {
   name: "Shivang Ranjan",
@@ -400,8 +401,9 @@ export const certifications = [
     title: "Google Cloud Learning",
     org: "Google Cloud",
     desc: "Completed multiple Google Cloud courses; received official merchandise as recognition.",
+    image: certGoogleCloud,
     linkedin:
-      "https://www.linkedin.com/in/shivangranjann/",
+      "https://lnkd.in/p/djPpW2sS",
   },
 ];
 
