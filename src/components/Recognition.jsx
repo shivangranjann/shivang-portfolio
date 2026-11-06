@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useFadeUp } from "../hooks/useFadeUp";
 import SectionHeader from "./SectionHeader";
-import { certifications, achievements } from "../data/data";
+import { certifications } from "../data/data";
 
 function CertificateModal({ cert, onClose }) {
   useEffect(() => {
@@ -247,19 +247,5 @@ export function Certifications() {
   );
 }
 
-export function Achievements() {
-  return (
-    <section
-      id="achievements"
-      className="bg-surface px-[20px] py-[60px] md:px-[40px] md:py-[80px] lg:px-[80px] lg:py-[100px] transition-colors duration-[400ms]"
-    >
-      <SectionHeader label="06 — Recognition" title="Achievements" count="06" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] xl:gap-[32px]">
-        {achievements.map((a, i) => (
-          <RecognitionCard key={i} item={a} bgClass="bg-bg" />
-        ))}
-      </div>
-    </section>
-  );
-}
+
 

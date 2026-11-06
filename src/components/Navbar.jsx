@@ -7,7 +7,6 @@ const navItems = [
   "skills",
   "projects",
   "education",
-  "achievements",
 ];
 
 export default function Navbar() {
